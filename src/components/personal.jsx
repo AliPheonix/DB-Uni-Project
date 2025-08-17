@@ -11,13 +11,32 @@ const Personal = () => {
         backgroundColor: "#3c6382",
         color: "#ffffff",
         direction: "rtl",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <h1 style={{ textAlign: "center", fontFamily: "IRANSANS" }}>
         اطلاعات حساب کاربری
       </h1>
-      <Box className="personal-information">
-        <Box className="top-details" display={"flex"}>
+      <Box
+        className="personal-information"
+        sx={{
+          width: "80%",
+          height: "50%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Box
+          className="top-details"
+          display={"flex"}
+          width={"100%"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+        >
           <Typography fontFamily={"IRANSANS"} fontSize={22}>
             نام :
           </Typography>
@@ -28,7 +47,13 @@ const Personal = () => {
             شماره تماس :
           </Typography>
         </Box>
-        <Box className="bott-details" display={"flex"}>
+        <Box
+          className="bott-details"
+          display={"flex"}
+          width={"100%"}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+        >
           <Typography fontFamily={"IRANSANS"} fontSize={22}>
             کد ملی :
           </Typography>
@@ -44,6 +69,7 @@ const Personal = () => {
             fontFamily: "IRANSANS",
             color: "#0c2461",
             backgroundColor: "#ced6e0",
+            textAlign: "center",
           }}
         >
           ویرایش اطلاعات
